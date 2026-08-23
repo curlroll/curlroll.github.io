@@ -161,6 +161,30 @@
   .lb figcaption{margin-top:14px;color:#dfe4ee;font-size:14px;font-weight:600;}
   .lb .close{position:absolute;top:18px;right:24px;font-size:30px;line-height:1;color:#fff;cursor:pointer;background:none;border:none;}
 
+  /* Price */
+  .price-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:44px;align-items:start;}
+  @media(max-width:900px){.price-grid{grid-template-columns:1fr;}}
+  .pcard{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:28px 26px;height:100%;}
+  .ptag{display:inline-block;font-size:11px;font-weight:700;letter-spacing:.1em;color:var(--orange);
+    background:rgba(255,106,26,.10);padding:4px 11px;border-radius:99px;margin-bottom:14px;}
+  .pcard h3{font-size:18px;font-weight:800;margin-bottom:8px;}
+  .pcard .phead p{color:var(--muted);font-size:14px;line-height:1.75;}
+  .plist{list-style:none;margin:20px 0 0;border-top:1px solid var(--line);}
+  .plist li{display:flex;justify-content:space-between;align-items:baseline;gap:14px;
+    padding:13px 0;border-bottom:1px solid var(--line);font-size:14.5px;}
+  .plist li span{color:var(--ink);}
+  .plist li small{display:block;color:var(--muted);font-size:12px;font-weight:500;line-height:1.5;}
+  .plist li b{white-space:nowrap;font-size:16px;font-weight:900;color:var(--navy);}
+  .pnote{margin-top:14px;color:var(--muted);font-size:12.5px;line-height:1.7;}
+  .price-extra{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:26px;}
+  @media(max-width:900px){.price-extra{grid-template-columns:1fr;}}
+  .pex{background:#fff;border:1px solid var(--line);border-radius:14px;padding:22px 24px;}
+  .pex h4{font-size:15px;font-weight:800;margin-bottom:8px;display:flex;align-items:center;gap:8px;}
+  .pex h4::before{content:"";width:6px;height:6px;border-radius:99px;background:var(--orange);flex:none;}
+  .pex p{color:var(--muted);font-size:14px;line-height:1.8;}
+  .pex small{display:inline-block;margin-top:8px;font-size:12.5px;line-height:1.65;}
+  .pex b{color:var(--ink);font-weight:800;}
+
   /* Flow */
   .tint{background:linear-gradient(180deg,#fbfcfe,#f4f6fb);}
   .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:44px;}
@@ -204,6 +228,7 @@
     <ul>
       <li class="hide-sp"><a href="#concept">コンセプト</a></li>
       <li><a href="#lineup">商品ライン</a></li>
+      <li><a href="#price">料金</a></li>
       <li class="hide-sp"><a href="#flow">注文の流れ</a></li>
       <li class="hide-sp"><a href="#faq">FAQ</a></li>
       <li><a href="#contact">お問い合わせ</a></li>
@@ -307,7 +332,7 @@
     <div class="wrap">
       <span class="kicker">Line-up</span>
       <h2 class="sec-title">つくれるもの</h2>
-      <p class="sec-sub">下記は代表的な例です。デザイン・アイテムはご相談ください。（掲載価格・写真は準備中）</p>
+      <p class="sec-sub">下記は代表的な例です。デザイン・アイテムはご相談ください。<a href="#price">料金の目安はこちら</a>。</p>
       <div class="line">
         <article class="prod">
           <div class="ph"><span class="tag">TEAM</span><span class="no">01</span></div>
@@ -358,17 +383,85 @@
                onerror="var f=this.closest('.shot');f.className='shot soon';f.removeAttribute('data-full');f.textContent='準備中';">
           <figcaption>タオルへのプリント</figcaption>
         </figure>
-        <figure class="shot is-clickable" data-full="images/gallery-04.jpg" data-caption="ボウリング用ポリッシャー｜お持ち込み品にプリントした例です。色違いでの展開もできます">
-          <img src="images/gallery-04.jpg" alt="ブルー・グレー・イエローのボウリング用ポリッシャーに同じロゴをプリントした例" loading="lazy"
+        <figure class="shot is-clickable" data-full="images/gallery-05.jpg" data-caption="ボウリング用ポリッシャー｜お持ち込み品にプリントした例です。色違いでの展開もできます">
+          <img src="images/gallery-05.jpg" alt="ブルー・グレー・イエローのボウリング用ポリッシャーに同じロゴをプリントした例" loading="lazy"
                onerror="var f=this.closest('.shot');f.className='shot soon';f.removeAttribute('data-full');f.textContent='準備中';">
           <figcaption>ポリッシャーへのプリント例</figcaption>
         </figure>
-        <figure class="shot is-clickable" data-full="images/gallery-05.jpg" data-caption="ロゴ入りポーチ｜小物にもプリントできます">
-          <img src="images/gallery-05.jpg" alt="Curl Rollロゴ入りポーチ（DTFプリント作例）" loading="lazy"
+        <figure class="shot is-clickable" data-full="images/gallery-04.jpg" data-caption="ロゴ入りポーチ｜小物にもプリントできます">
+          <img src="images/gallery-04.jpg" alt="Curl Rollロゴ入りポーチ（DTFプリント作例）" loading="lazy"
                onerror="var f=this.closest('.shot');f.className='shot soon';f.removeAttribute('data-full');f.textContent='準備中';">
           <figcaption>ロゴ入りポーチ</figcaption>
         </figure>
       </div>
+    </div>
+  </section>
+
+  <!-- PRICE -->
+  <section id="price" class="tint">
+    <div class="wrap">
+      <span class="kicker">Price</span>
+      <h2 class="sec-title">料金の目安</h2>
+      <p class="sec-sub">1枚からお作りできます。下記は税込のおおよその目安です。アイテムやプリントの大きさで変わりますので、正確な金額は無料のお見積りでお出しします。</p>
+
+      <div class="price-grid">
+        <article class="pcard">
+          <div class="phead">
+            <span class="ptag">おまかせ</span>
+            <h3>ウェアごとおまかせ</h3>
+            <p>無地のウェアのご用意からお任せいただくプランです。生地の色や素材もご相談ください。</p>
+          </div>
+          <ul class="plist">
+            <li><span>Tシャツ｜ワンポイント</span><b>2,500円〜</b></li>
+            <li><span>Tシャツ｜大判プリント</span><b>4,500円〜</b></li>
+            <li><span>ポロ・ボウリングシャツ｜大判</span><b>5,500円〜</b></li>
+            <li><span>追加面｜ワンポイント</span><b>＋1,000円〜</b></li>
+            <li><span>追加面｜大判（背中など）</span><b>＋2,500円〜</b></li>
+          </ul>
+        </article>
+        <article class="pcard">
+          <div class="phead">
+            <span class="ptag">持ち込み</span>
+            <h3>お手持ちのウェアにプリント</h3>
+            <p>愛用のシャツや、すでにお持ちのチームウェアに、あとからプリントを足せます。</p>
+          </div>
+          <ul class="plist">
+            <li><span>ワンポイント（左胸など）</span><b>1,500円〜</b></li>
+            <li><span>大判プリント（背中など）</span><b>3,500円〜</b></li>
+            <li><span>プリント追加（1箇所につき）</span><b>＋1,000円〜</b></li>
+          </ul>
+          <p class="pnote">※ 生地の種類によってはお受けできない場合があります。事前にご相談ください。</p>
+        </article>
+        <article class="pcard">
+          <div class="phead">
+            <span class="ptag">グッズ</span>
+            <h3>タオル・小物</h3>
+            <p>ボウリング場で使う実用品にも、ウェアと同じデザインで展開できます。</p>
+          </div>
+          <ul class="plist">
+            <li><span>マイクロファイバータオル<br><small>ブルー／イエローの2色</small></span><b>2,000円〜</b></li>
+            <li><span>トートバッグ</span><b>2,200円〜</b></li>
+            <li><span>ロゴ入りポーチ</span><b>2,500円〜</b></li>
+          </ul>
+          <p class="pnote">※ デザインの形は自由です。丸・横長・大判など、置きたい形に合わせてお作りします。</p>
+        </article>
+      </div>
+
+      <div class="price-extra">
+        <div class="pex">
+          <h4>デザイン料</h4>
+          <p>データをお持ち込みの場合は<b>無料</b>。ゼロからお作りする場合は<b>3,000円〜</b>（修正2回まで）。一度作ったデザインのお名前差し替えは<b>1名 500円</b>です。</p>
+        </div>
+        <div class="pex">
+          <h4>まとめ割</h4>
+          <p>同じ商品をまとめてお作りすると単価が下がります。<b>5点以上 5%OFF</b>／<b>10点ごとに1点無料</b>（10点で11点、20点で22点）。チームやリーグのお揃いはこちらがおトクです。<br><small>※ 追加面のプリント料金とデザイン料は割引の対象外です。20点を超える大口のご注文は別途お見積りいたします。</small></p>
+        </div>
+        <div class="pex">
+          <h4>送料</h4>
+          <p>全国一律 <b>1,000円</b>。<b>10,000円以上のご注文は送料無料</b>です。お近くであれば直接お渡しも承ります。</p>
+        </div>
+      </div>
+      <p class="faq-note">※ 表示は税込のおおよその目安です。デザインの大きさ・色数・枚数・生地により変動します。お見積りは無料ですので、お気軽にお問い合わせください。</p>
     </div>
   </section>
 
@@ -394,7 +487,7 @@
       <h2 class="sec-title">よくあるご質問</h2>
       <div class="faq-wrap">
         <details class="faq"><summary>1枚だけでも注文できますか？</summary><div class="a">はい、1枚からお作りできます。完全受注生産なので、お一人用の一着でも、チームのお揃いでも承ります。</div></details>
-        <details class="faq"><summary>料金はどれくらいですか？</summary><div class="a">アイテム（Tシャツ・ポロ・タオルなど）、デザインの大きさ、枚数によって変わります。まずはお気軽にお見積りください。1枚からでもご相談いただけます。</div></details>
+        <details class="faq"><summary>料金はどれくらいですか？</summary><div class="a">目安として、お手持ちのウェアにワンポイントで1,500円〜、Tシャツごとおまかせの大判プリントで4,500円〜です。アイテム・デザインの大きさ・枚数で変わりますので、詳しくは<a href="#price">料金の目安</a>をご覧ください。お見積りは無料です。</div></details>
         <details class="faq"><summary>納期はどれくらいですか？</summary><div class="a">デザインの確定後、目安としておよそ1〜2週間ほどでのお届けを想定しています。お急ぎの場合はご相談ください。</div></details>
         <details class="faq"><summary>自分のデザインを持ち込めますか？</summary><div class="a">はい、お持ちのロゴやイラストの持ち込みも歓迎です。データがなくても、イメージから一緒に形にしていけます。</div></details>
         <details class="faq"><summary>どんな生地にプリントできますか？</summary><div class="a">綿・ポリエステル・混紡など、幅広い生地に対応します。DTFプリントは多色や大判のデザインも得意です。ボウリング用のドライポロなども承ります。</div></details>
