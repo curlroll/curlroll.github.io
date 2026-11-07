@@ -64,7 +64,9 @@
       "name": "CURL ROLL（カールロール）",
       "inLanguage": "ja",
       "publisher": { "@id": "https://curlroll.github.io/#organization" }
-    }
+    },
+    {"@type": "FAQPage", "@id": "https://curlroll.github.io/#faq", "mainEntity": [{"@type": "Question", "name": "ワンポイントを1箇所だけ、でも頼めますか？", "acceptedAnswer": {"@type": "Answer", "text": "はい、もちろんです。お手持ちのシャツの左胸に名前だけ、タオルにロゴだけ、といったご依頼を歓迎しています。目安は1箇所1,500円〜です。"}}, {"@type": "Question", "name": "1枚だけでも注文できますか？", "acceptedAnswer": {"@type": "Answer", "text": "はい、1枚からお作りできます。完全受注生産なので、お一人用の一着でも、チームのお揃いでも承ります。"}}, {"@type": "Question", "name": "料金はどれくらいですか？", "acceptedAnswer": {"@type": "Answer", "text": "目安として、お手持ちのウェアにワンポイントで1,500円〜、Tシャツごとおまかせの大判プリントで5,500円〜です。アイテム・デザインの大きさ・枚数で変わりますので、詳しくは料金の目安をご覧ください。お見積りは無料です。"}}, {"@type": "Question", "name": "納期はどれくらいですか？", "acceptedAnswer": {"@type": "Answer", "text": "デザインの確定後、目安としておよそ1〜2週間ほどでのお届けを想定しています。お急ぎの場合はご相談ください。"}}, {"@type": "Question", "name": "自分のデザインを持ち込めますか？", "acceptedAnswer": {"@type": "Answer", "text": "はい、お持ちのロゴやイラストの持ち込みも歓迎です。データがなくても、イメージから一緒に形にしていけます。"}}, {"@type": "Question", "name": "どんな生地にプリントできますか？", "acceptedAnswer": {"@type": "Answer", "text": "綿・ポリエステル・混紡など、幅広い生地に対応します。DTFプリントは多色や大判のデザインも得意です。ボウリング用のドライポロなども承ります。"}}, {"@type": "Question", "name": "洗濯しても大丈夫ですか？", "acceptedAnswer": {"@type": "Answer", "text": "通常のご家庭での洗濯に対応します。長持ちさせるコツ（裏返して洗うなど）も、お渡し時にご案内します。"}}]},
+    {"@type": "Service", "@id": "https://curlroll.github.io/#service", "name": "ボウリング向けDTFプリント（ワンポイント・名入れ・チームウェア）", "serviceType": "DTFプリント", "provider": {"@id": "https://curlroll.github.io/#organization"}, "areaServed": {"@type": "Country", "name": "日本"}, "offers": [{"@type": "Offer", "name": "お手持ちのウェアにワンポイントプリント", "price": "1500", "priceCurrency": "JPY"}, {"@type": "Offer", "name": "お手持ちのウェアに大判プリント", "price": "3500", "priceCurrency": "JPY"}, {"@type": "Offer", "name": "Tシャツごとおまかせ（ワンポイント）", "price": "3500", "priceCurrency": "JPY"}, {"@type": "Offer", "name": "タオル・小物へのプリント", "price": "2000", "priceCurrency": "JPY"}]}
   ]
 }
 </script>
@@ -369,7 +371,7 @@
       </div>
       <div class="hero-art">
         <figure class="chara-card">
-          <img src="images/chara/curl-full.webp" alt="ボウリングボールを持ったCURL ROLLの看板娘、カールちゃん" width="425" height="955">
+          <img src="images/chara/curl-full.webp" alt="ボウリングボールを持ったCURL ROLLの看板娘、カールちゃん" width="425" height="955" fetchpriority="high">
           <figcaption>看板娘の <b>カールちゃん</b></figcaption>
         </figure>
       </div>
@@ -467,28 +469,28 @@
       <div class="grid-g">
         <figure class="shot is-clickable" data-full="images/gallery-01.jpg" data-caption="ボウリングシャツ バックプリント｜NBF TOKYO 様">
           <span class="badge">NEW</span>
-          <img src="images/gallery-01.jpg" alt="黒のボウリングシャツ背面に大判プリントしたチーム名入りデザイン" loading="lazy"
+          <img src="images/gallery-01-thumb.webp" alt="黒のボウリングシャツ背面に大判プリントしたチーム名入りデザイン" loading="lazy"
                onerror="var f=this.closest('.shot');f.className='shot soon';f.removeAttribute('data-full');f.textContent='準備中';">
           <figcaption>ボウリングシャツ バックプリント</figcaption>
         </figure>
         <figure class="shot is-clickable" data-full="images/gallery-02.jpg" data-caption="アロハシャツ バックプリント｜柄物の生地にも大判でのせられます">
           <span class="badge">NEW</span>
-          <img src="images/gallery-02.jpg" alt="青いアロハシャツの背面に大判プリントした名入りデザイン" loading="lazy"
+          <img src="images/gallery-02-thumb.webp" alt="青いアロハシャツの背面に大判プリントした名入りデザイン" loading="lazy"
                onerror="var f=this.closest('.shot');f.className='shot soon';f.removeAttribute('data-full');f.textContent='準備中';">
           <figcaption>アロハシャツ バックプリント</figcaption>
         </figure>
         <figure class="shot is-clickable" data-full="images/gallery-03.jpg" data-caption="マイクロファイバータオル｜ボウリング用のグッズにも">
-          <img src="images/gallery-03.jpg" alt="青いマイクロファイバータオルにプリントしたCURL ROLLロゴ" loading="lazy"
+          <img src="images/gallery-03-thumb.webp" alt="青いマイクロファイバータオルにプリントしたCURL ROLLロゴ" loading="lazy"
                onerror="var f=this.closest('.shot');f.className='shot soon';f.removeAttribute('data-full');f.textContent='準備中';">
           <figcaption>タオルへのプリント</figcaption>
         </figure>
         <figure class="shot is-clickable" data-full="images/gallery-05.jpg" data-caption="ボウリング用ポリッシャー｜お持ち込み品にプリントした例です。色違いでの展開もできます">
-          <img src="images/gallery-05.jpg" alt="ブルー・グレー・イエローのボウリング用ポリッシャーに同じロゴをプリントした例" loading="lazy"
+          <img src="images/gallery-05-thumb.webp" alt="ブルー・グレー・イエローのボウリング用ポリッシャーに同じロゴをプリントした例" loading="lazy"
                onerror="var f=this.closest('.shot');f.className='shot soon';f.removeAttribute('data-full');f.textContent='準備中';">
           <figcaption>ポリッシャーへのプリント例</figcaption>
         </figure>
         <figure class="shot is-clickable" data-full="images/gallery-04.jpg" data-caption="ロゴ入りポーチ｜小物にもプリントできます">
-          <img src="images/gallery-04.jpg" alt="Curl Rollロゴ入りポーチ（DTFプリント作例）" loading="lazy"
+          <img src="images/gallery-04-thumb.webp" alt="Curl Rollロゴ入りポーチ（DTFプリント作例）" loading="lazy"
                onerror="var f=this.closest('.shot');f.className='shot soon';f.removeAttribute('data-full');f.textContent='準備中';">
           <figcaption>ロゴ入りポーチ</figcaption>
         </figure>
